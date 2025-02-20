@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>iPhone Interface with App Images</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .iphone {
+      width: 320px;
+      height: 640px;
+      background: #000;
+      border-radius: 40px;
+      border: 12px solid #222;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .screen {
+      width: 100%;
+      height: 100%;
+      background: #fff;
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+
+    .app {
+      width: 60px;
+      height: 60px;
+      background: #fff;
+      border-radius: 15px;
+      margin: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+    }
+
+    .app img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .home-button {
+      width: 60px;
+      height: 60px;
+      background: #222;
+      border-radius: 50%;
+      position: absolute;
+      bottom: 15px;
+      left: 50%;
+      transform: translateX(-50%);
+      box-shadow: inset 0 2px 4px rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+  <div class="iphone">
+    <div class="screen">
+      <div class="app"><img src="https://via.placeholder.com/60/FF5733/FFFFFF?text=A" alt="App 1"></div>
+      <div class="app"><img src="https://via.placeholder.com/60/33FF57/FFFFFF?text=B" alt="App 2"></div>
+      <div class="app"><img src="https://via.placeholder.com/60/3357FF/FFFFFF?text=C" alt="App 3"></div>
+      <div class="app"><img src="https://via.placeholder.com/60/FF33A1/FFFFFF?text=D" alt="App 4"></div>
+      <div class="app"><img src="https://via.placeholder.com/60/FFC300/FFFFFF?text=E" alt="App 5"></div>
+      <div class="app"><img src="https://via.placeholder.com/60/DAF7A6/FFFFFF?text=F" alt="App 6"></div>
+      <div class="app"><img src="https://via.placeholder.com/60/900C3F/FFFFFF?text=G" alt="App 7"></div>
+      <div class="app"><img src="https://via.placeholder.com/60/581845/FFFFFF?text=H" alt="App 8"></div>
+    </div>
+    <div class="home-button"></div>
+  </div>
+</body>
+</html>
+    
